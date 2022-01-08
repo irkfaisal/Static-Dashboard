@@ -1,0 +1,201 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* color: #124143 */
+/* color: #C0F7B7 */
+/* color: #5AC994 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 16rem;
+    background: #28DF99;
+    transition: all 0.5s ease;
+}
+
+.sidebar .active {
+    width: 60px;
+}
+.sidebar.active~.logo_name{
+   display: block;
+}
+
+.sidebar .logo {
+    height: 5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .logo i {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-left: 0.25em;
+    text-align: center;
+}
+
+.sidebar .logo .logo_name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 0.5em;
+}
+
+.sidebar .nav-links {
+    margin-top: 1em;
+
+}
+
+.sidebar .nav-links li {
+    height: 3em;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar .nav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a:hover {
+    background: #00BD56;
+}
+
+.sidebar .nav-links li a i {
+    color: #fff;
+    min-width: 4rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sidebar .nav-links .links_name {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+
+}
+
+/* ******************************************************************************
+************************Home-section css************************************** */
+.home-section {
+    background: #ECFEFF;
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 16rem);
+    left: 16rem;
+}
+
+.sidebar.active~.home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+.home-section nav {
+    height: 4rem;
+    background: #fff;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+nav .sidebar-button i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.home-section nav .search-box {
+    height: 50px;
+    width: 550px;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav .search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+nav .search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: #ECFEFF;
+    border: 2px solid #F5F6FA;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+nav .search-box .bx-search {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #00BD56;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.4 ease;
+}
+
+.home-section nav .profile-details {
+    display: flex;
+    align-items: center;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    height: 50px;
+    min-width: 190px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+nav .profile-details .admin_name {
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i {
+    font-size: 25px;
+    color: black;
+}
